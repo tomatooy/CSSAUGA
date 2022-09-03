@@ -1,0 +1,83 @@
+.redText {
+    color: #BA0C2F;
+}
+.socialMain{
+    width: 90%;
+    margin: auto;
+}
+
+.footerHeader {
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    letter-spacing: 3px;
+}
+
+.boldText {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.icon {
+    display:block;
+    margin: auto;
+}
+.iconLink{
+    background: #BA0C2F;
+    border-radius: 100%;
+    height: 70px;
+    width: 70px;
+    font-size:30px;
+    display: flex;
+    color: white;
+}
+.footerSocial {
+    display: flex;
+    width: 80%;
+    border: none !important;
+    justify-content: space-between;
+    padding: 20px 0;
+    list-style: none;
+    margin: auto;
+}
+
+.liContainer {
+    display: flex;
+    margin: 0.5em 0;
+}
+
+.footerBold{
+    font-weight: bold;
+}
+.grayText{
+    color: gray;
+}
+.socialText{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    
+}
+
+@media screen and (max-width: 600px) {
+   .footerSocial{
+    display: block;
+    float:none;
+    width:80%;
+    padding:0;
+   } 
+   .socialHeader{
+       margin: 0;  
+   }
+   .socialText{
+       text-align:start;
+       margin-left: 3em;
+   }
+   .socialHeader h1,h3{
+       margin: 0;
+   }
+
+   .footerHeader *{
+       margin: 0;
+   }
+  }

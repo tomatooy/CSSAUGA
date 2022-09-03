@@ -1,0 +1,85 @@
+:root {
+    --theme-color: #ba0c2f;
+}
+
+
+
+.eventHeader {
+    font-size: 40px;
+    margin: 0 auto;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, var(--theme-color), 50%, transparent 50%) 100% 1;
+    width: max-content;
+    background-color: #fff7f7;
+    padding-top: 30px;
+
+}
+
+.eventsWrapper {
+    background-color: #fff7f7;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.mainDisplay {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.event {
+    width: 25%;
+    margin: 50px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+.event:hover{
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 12px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+.eventPic {
+    height: auto;
+    overflow: hidden;
+
+}
+
+.eventPic img {
+    aspect-ratio: auto 860 / 360;
+    height: auto;
+}
+
+.eventTitleWrap {
+    float: left;
+    margin-left: 10px;
+    text-align: start;
+    font-weight: normal;
+
+}
+
+.eventDescription {
+    line-height: 1.5;
+    color: #333333;
+    overflow-wrap: break-word;
+    text-align: start;
+    margin-left: 10px;
+}
+
+.eventDate {
+    color: #554f47;
+
+}
+
+@media screen and (max-width: 600px) {
+    .mainDisplay{
+        display: block;
+    }
+
+    .event{
+        width: 100%;
+        margin: 1em auto;
+    }
+}

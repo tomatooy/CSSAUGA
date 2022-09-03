@@ -1,0 +1,116 @@
+:root {
+    --theme-color: #ba0c2f;
+}
+
+.bannerH1 {
+    font-size: 70px;
+    background-color: #e2e2e2;
+    margin-top: 0;
+    padding: 20px 0;
+    width: 100%;
+    margin: auto;
+}
+
+.bannerH2 {
+    font-size: x-large;
+    width: 40%;
+    margin: 30px auto;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+
+}
+
+.departmentSwiper {
+    background-color: var(--theme-color);
+    height: 300px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.departmentBanner {
+
+    background-color: var(--theme-color);
+    border-top: 3px solid rgb(228, 0, 43);
+    border-bottom: 3px solid rgb(228, 0, 43);
+}
+
+.departmentBanner h1 {
+    color: white;
+    padding-top: 10px;
+    font-stretch: expanded;
+}
+
+.departmentEle {
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    height: 200px;
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+}
+
+.departmentName {
+    position: relative;
+    color: var(--theme-color);
+    top: 40%;
+}
+
+.departmentSlide {
+    height: 80%;
+}
+
+.departmentSwiper {
+    width: 90%;
+    background-color: var(--theme-color);
+}
+
+.departmentDetails {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    inline-size: 150px;
+    overflow-wrap: break-word;
+    width: 80%;
+    right: 10%;
+    font-family: 'Merriweather Sans', sans-serif;
+
+}
+
+.departmentEle:hover {
+    transition: all 500ms ease-in-out;
+}
+
+.departmentEle:hover .departmentDetails {
+    transition: all 500ms ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+
+.departmentEle:hover .departmentName {
+    transition: all 500ms ease-in-out;
+    top: 10%;
+}
+
+.detailButton {
+    background-color: #ba0c2f;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    box-sizing: border-box;
+    transition: all 300ms ease-in;
+    border: 3px solid  transparent;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 3%;
+    right: 30%; 
+    width: 40%;
+}
+
+.departmentEle:hover .detailButton {
+    transition: all 500ms ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    
+     
+}

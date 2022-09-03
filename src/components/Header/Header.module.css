@@ -1,0 +1,140 @@
+:root{
+    height:80px;
+}
+
+.logo {
+    height: 80px;
+    float: left;
+    width: 80px;
+    object-fit: scale-down;
+}
+
+.header ul {
+    list-style: none;
+    margin: auto;
+    text-align: center;
+}
+
+
+.header {
+    width: 80%;
+    margin: auto;
+    font-weight: 500;
+    color: gray;
+    align-items: center;
+    overflow: hidden;
+}
+
+.headerWrapper {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+}
+
+.li {
+    border-bottom: 2px solid transparent;
+}
+.navItem{
+    display:block;
+    float: right;
+    padding: 30px 0;
+    width:200px;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+
+.navItem:hover .subList {
+    visibility: visible;
+    opacity: 1;
+}
+
+.navItem:hover{
+    background-color:#ba0c2f;
+    color: white;
+}
+
+.subList {
+    background-color: #333;
+    color: #9d9d9d;
+    position: absolute;
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    display: block;
+    padding:0;
+    top: 80px;
+    width:inherit;
+}
+
+.subList li {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.toggle {
+    color: #9d9d9d;
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        width: 100%;
+        overflow:hidden;
+        background-color: white;
+        height:80px;
+    }
+
+    .logo {
+        float: left;
+
+    }
+    .navList{
+        padding:0;
+    }
+   
+    .navItem {
+        float: none;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .subList{
+        position: relative;
+        display:none;
+    }
+
+    .toggle {
+        position: absolute;
+        right:20px;
+        top:30px;
+        display: block;
+    }
+
+    .navNotActive{
+        display: none;
+    }
+    .navActive{
+        display: block;
+        position:absolute;
+        z-index: 3;
+        top:80px;
+        width: 100%;
+        overflow: hidden;
+        background-color:white;
+    }
+    .navItem:hover .subList{
+        display: block;
+        position: relative;
+    }
+    .subList{
+        top:30px;
+    }
+
+    
+    
+}

@@ -1,0 +1,59 @@
+.menu {
+    /*defining css for the menu class which will be used by all menus*/
+    width: max-content;
+    /* sets the width of the menu*/
+    width: 15%;
+   
+}
+
+.menu ul {
+    list-style-type: none;
+    /*to disable the bullets that appear in lists*/
+    padding-left: 0px;
+    /*to disable list paddings on the left side*/
+
+}
+
+
+.menu ul li .link,.sublink{
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: max-content;
+    
+}
+.sublink{
+   margin-left: 10px;
+}
+
+.menu ul li .link,.sublink{
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: start;
+}
+
+.menu ul li .link:hover,.sublink:hover {
+    background-color: #9c2148;
+    background-size: cover;
+    color: beige;
+    /*this is to highlight the element when you move/hover your mouse over it*/
+}
+
+
+.detailMain {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 2em;
+}
+
+#subMenu {
+    display: inline;
+}
+
+.display {
+    width: 60%;
+    line-height: 2;
+}
