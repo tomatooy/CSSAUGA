@@ -2,8 +2,8 @@
     color: #BA0C2F;
 }
 .socialMain{
-    width: 90%;
-    margin: auto;
+    width: 70%;
+    margin: 2em auto;
 }
 
 .footerHeader {
@@ -80,4 +80,8 @@
    .footerHeader *{
        margin: 0;
    }
+   .socialMain{
+    width: 90%;
+    margin: auto;
+}
   }

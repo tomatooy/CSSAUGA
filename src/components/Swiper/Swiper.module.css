@@ -4,12 +4,11 @@
 
 .swiper-container {
     width: 100%;
-    height: auto;
 }
 
 .swiper-slide {
     width: auto;
-    height: auto;
+
 }
 
 img {
@@ -23,6 +22,9 @@ img {
     width: 100%;
     margin: auto;
 }
+.mySwiper{
+    height: 80vh;
+}
 
 .slideCaption {
     position: absolute;
@@ -34,8 +36,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
-
 
 
 @media screen and (max-width: 600px) {

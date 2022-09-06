@@ -74,9 +74,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .mainDisplay{
-        display: block;
-    }
+  
 
     .event{
         width: 100%;

@@ -13,7 +13,7 @@ export default function Departments() {
     return (
         <>
             <div className={styles.departmentBanner}>
-                <h1>DEPARMENTS</h1>
+                <h1 className={styles.bannerH1}>OUR STRUCTURE</h1>
                 <Swiper
                     slidesPerView={4}
                     spaceBetween={40}

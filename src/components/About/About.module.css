@@ -1,36 +1,38 @@
 :root {
     --theme-color: #ba0c2f;
-
+    --fill-color:#ba0c2f;
 }
 
 .bannerH1 {
     font-size: 70px;
-    background-color: #e2e2e2;
+    background-color: var(--theme-color);
     margin-top: 0;
     padding: 20px 0;
     width: 100%;
     margin: auto;
-}
-
-.bannerText {
-    font-size: x-large;
-    width: 60%;
-    margin: auto;
-    font-family: 'Libre Baskerville', serif;
+    color: white;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background: rgb(210, 210, 218);
-    background: linear-gradient(90deg, #e2e2e2 4%, rgba(255, 255, 255, 1) 50%);
-
 }
 
+
+.bannerUpper{
+    background-color: #ba0c2f;
+    color: white;
+    margin:0;
+    padding: 1em 1em 2em 1em;
+}
+
+
+.upperTextWrapper{
+    width: 70%;
+    margin: auto;
+    font-size: large;
+}
 .main {
     height: 60vh;
     display: flex;
     width: 100%;
+
 }
 
 .bannerPic img {
@@ -41,7 +43,7 @@
 .textWrapper {
     border: 3px solid #555;
     padding: 10px;
-    width: 60%;
+    width: 50%;
     height: fit-content;
     margin: auto;
     background-color: white;
@@ -50,33 +52,74 @@
 }
 
 .borderWrapper {
-    padding: 20px;
-    border: 3px solid #555;
-
+  background-color: #ba0c2f;
 }
 
 .bannerPic {
-    width: 60%;
+    width: 50%;
+}
+.bannerText{
+    background-image:linear-gradient(-45deg,rgba(0,0,0,.15) 50%,transparent 0);
+    background-color: rgba(85,79,71,1)!important;
+    width: 50%;
+    display: flex;
+    align-items: center;
 }
 
 .joinUs {
-    background-color: #ba0c2f;
     text-decoration: none;
     padding: 20px 50px;
     color: white;
-    border: none;
+    border: 2px solid white;
     font-size: large;
     font-weight:600;
     box-sizing: border-box;
     transition: all 300ms ease-in;
-    border: 3px solid  transparent;
+    display: inline-block;
+    margin: 3em;
 }
-.buttonWrapper{
-    padding: 4px;
-    background-color: #ba0c2f;
-    width: max-content;
+
+
+.lowerTextWrapper h3{
+    text-transform: uppercase;
+    font-family: Oswald;
+    font-size: 3em;
+    text-align:start;
+    padding-left: 1em;
+}
+.lowerTextWrapper ul{
+    text-align: none;
+    font-size: larger;
+}
+
+.lowerTextWrapper{
+    color: white;
+    width: 80%;
     margin: auto;
 }
-.buttonWrapper:hover .joinUs{
-    border: 3px solid  white;
+.joinUs:hover{
+    color: black;
+    background-color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .main{
+        display: block;
+        height: fit-content;
+    }
+    .bannerPic,.bannerText{
+        width: 100%;
+    }
+    .bannerPic{
+        height: 60vh;
+    }
+    .bannerText p{
+        font-size:medium;
+    }
+    .upperTextWrapper{
+        width: 90%;
+    }
+    .lowerTextWrapper{
+        width: 90%;
+    }
 }

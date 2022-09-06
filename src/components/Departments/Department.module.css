@@ -3,12 +3,12 @@
 }
 
 .bannerH1 {
-    font-size: 70px;
-    background-color: #e2e2e2;
+    font-size: 60px;
     margin-top: 0;
     padding: 20px 0;
     width: 100%;
     margin: auto;
+    text-align: center;
 }
 
 .bannerH2 {
