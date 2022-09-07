@@ -9,7 +9,7 @@ export default function NavItem() {
 
     const list = elements.map((element, index) => {
         return (
-            <li className={styles.navItem}>
+            <li className={styles.navItem} id={index}>
                {element}
                 <SubNavItem category={index} />
             </li>)

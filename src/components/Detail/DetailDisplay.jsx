@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Detail.module.css'
 import { useLocation } from 'react-router-dom';
 import { Departments } from './DetailData'
+import { BsChevronDoubleLeft } from "react-icons/bs";
 
 export default function DetailDisplay() {
     function useQuery() {
@@ -19,6 +20,7 @@ export default function DetailDisplay() {
             <p>
                 {query.description}
             </p>
+            <button className={styles.expandButton}><BsChevronDoubleLeft/></button>
         </div>)
     ) :
         (<div className={styles.display}>
@@ -28,7 +30,10 @@ export default function DetailDisplay() {
             <p>
                 Default
             </p>
-        </div>);
+            <button className={styles.expandButton}><BsChevronDoubleLeft/></button>
+        </div>
+        );
+    
     return (
         result
     )

@@ -47,6 +47,7 @@
     justify-content: space-around;
     margin: auto;
     margin-top: 2em;
+    text-align: center;
 }
 
 #subMenu {
@@ -56,4 +57,23 @@
 .display {
     width: 60%;
     line-height: 2;
+    margin: auto;
+}
+.expandButton{
+    font-size: 2em;
+    border: none;
+    display: flex;
+    position: absolute;
+    bottom: 1em;
+    right: 20px;
+    background-color: transparent;
+}
+
+@media screen and (max-width:600px) {
+    .detailMain{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
 }
