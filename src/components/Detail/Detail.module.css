@@ -3,7 +3,7 @@
     width: max-content;
     /* sets the width of the menu*/
     width: 15%;
-   
+
 }
 
 .menu ul {
@@ -15,25 +15,29 @@
 }
 
 
-.menu ul li .link,.sublink{
+.menu ul li .link,
+.sublink {
     padding: 10px 10px;
     margin-top: 10px;
     margin-bottom: 10px;
     width: max-content;
-    
-}
-.sublink{
-   margin-left: 10px;
+
 }
 
-.menu ul li .link,.sublink{
+.sublink {
+    margin-left: 10px;
+}
+
+.menu ul li .link,
+.sublink {
     text-decoration: none;
     color: black;
     display: block;
     text-align: start;
 }
 
-.menu ul li .link:hover,.sublink:hover {
+.menu ul li .link:hover,
+.sublink:hover {
     background-color: #9c2148;
     background-size: cover;
     color: beige;
@@ -59,10 +63,13 @@
     line-height: 2;
     margin: 1em 2em;
 }
-.expandButton{
-    font-size: 2em;
-    border-radius: 10%;
-    border-color: #999;
+
+.expandButton {
+    font-size: 3em;
+    background-color: white;
+    border: none;
+    color: black;
+    cursor: pointer;
     display: flex;
     position: absolute;
     bottom: 1em;
@@ -72,11 +79,14 @@
 }
 
 @media screen and (max-width:600px) {
-    .detailMain{
+    .detailMain {
         display: block;
         margin: auto;
     }
-    .display{
-        margin:auto;
-    };
+
+    .display {
+        margin: auto;
+    }
+
+    ;
 }

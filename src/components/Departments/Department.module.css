@@ -91,7 +91,7 @@
 }
 
 .detailButton {
-    background-color: #ba0c2f;
+    background-color: #ba0c2f;;
     text-decoration: none;
     padding: 10px 20px;
     color: white;
@@ -111,6 +111,5 @@
     transition: all 500ms ease-in-out;
     visibility: visible;
     opacity: 1;
-    
-     
+    color: white;
 }
