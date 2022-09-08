@@ -43,8 +43,8 @@
 
 .detailMain {
     display: flex;
-    width: 90%;
-    justify-content: space-around;
+    width: 80%;
+    justify-content: space-between;
     margin: auto;
     margin-top: 2em;
     text-align: center;
@@ -57,23 +57,26 @@
 .display {
     width: 60%;
     line-height: 2;
-    margin: auto;
+    margin: 1em 2em;
 }
 .expandButton{
     font-size: 2em;
-    border: none;
+    border-radius: 10%;
+    border-color: #999;
     display: flex;
     position: absolute;
     bottom: 1em;
     right: 20px;
     background-color: transparent;
+    color: #999;
 }
 
 @media screen and (max-width:600px) {
     .detailMain{
         display: block;
+        margin: auto;
     }
-    .menu{
-        display: none;
-    }
+    .display{
+        margin:auto;
+    };
 }

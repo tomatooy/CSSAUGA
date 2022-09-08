@@ -11,7 +11,7 @@ export default function Header() {
                     <Link to="/">
                         <img className={styles.logo} src="https://cdn.discordapp.com/attachments/940402118953668642/986687777531899944/IMG_4370.jpg" alt="UGACSSALogo" />
                     </Link>
-                    <span href="." className={styles.toggle} onClick={() => { changeActive(!navActive); console.log(navActive) }}>
+                    <span href="." className={styles.toggle} onClick={() => { changeActive(!navActive)}}>
                         <i class="fa fa-bars"></i>
                     </span>
                 </div>
