@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper";
 export default function Departments() {
-    const [isMobile, setIsMobile] = useState(false)
+    const [isMobile, setIsMobile] = useState(window.innerWidth<400)
 
     //choose the screen size 
     const handleResize = () => {

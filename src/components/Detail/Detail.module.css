@@ -81,7 +81,7 @@
 @media screen and (max-width:600px) {
     .detailMain {
         display: block;
-        margin: auto;
+        margin: 2em auto;
     }
 
     .display {
