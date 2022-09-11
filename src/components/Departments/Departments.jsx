@@ -41,9 +41,8 @@ export default function Departments() {
                     <SwiperSlide className={styles.departmentSlide}><DepartmentEle /></SwiperSlide>
                     <SwiperSlide className={styles.departmentSlide}><DepartmentEle /></SwiperSlide>
                     <SwiperSlide className={styles.departmentSlide}><DepartmentEle /></SwiperSlide>
-                    <SwiperSlide><DepartmentEle /></SwiperSlide>
-                    <SwiperSlide><DepartmentEle /></SwiperSlide>
-                    <SwiperSlide><DepartmentEle /></SwiperSlide>
+                    <SwiperSlide className={styles.departmentSlide}><DepartmentEle /></SwiperSlide>
+                    <SwiperSlide className={styles.departmentSlide}><DepartmentEle /></SwiperSlide>
                 </Swiper>
             </div>
         </>

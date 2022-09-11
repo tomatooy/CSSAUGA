@@ -17,7 +17,7 @@ export default function DepartmentEle() {
     <div className={styles.departmentEle}>
       <h2 className={styles.departmentName}>Information Technologhy</h2>
       <div className={styles.departmentDetails}>
-        <p>Whatever this department does</p>
+        <p>Whatever this department doesWhatever this department doesWhatever this department doesWhatever this department doesWhatever this department doesWhatever this department doesWhatever this department does</p>
       </div>
       <Link to="/detail?department=IT" className={styles.detailButton}>
         LEARN MORE
