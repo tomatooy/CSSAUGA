@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styles from './Detail.module.css'
 import { Link, useLocation } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css';
 export default function ExpandNav({ to }) {
 
     const [display1, changeDisplay1] = useState('inline');

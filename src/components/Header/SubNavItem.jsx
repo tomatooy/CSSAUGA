@@ -4,7 +4,7 @@ import styles from './Header.module.css'
 
 export default function SubNavItem(props) {
     const { category } = props
-    const [content] = useState([['About Us', 'Gallery', 'Contact Us'], ['Athens News', 'Bulldog News', 'Community'], ['YummySpicy', 'What ever', 'Wings101']])
+    const [content] = useState([['About Us', 'Gallery', 'Contact Us'], ['Athens News', 'Bulldog News', 'Community'], []])
     const subList = content.find((_, index) =>
         index === category
     ).map(element => {

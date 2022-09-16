@@ -1,22 +1,28 @@
-import Home from '../components/Home'
+import Home from '../pages/Home'
 import Detail from '../components/Detail'
 import Contact from '../components/Detail/Contact'
-
+import Resource from '../components/Resource'
 const router = [
     {
         path: '/detail',
-        element:<Detail/>,
-        Children:[
+        element: <Detail />,
+        Children: [
             {
                 path: 'contact',
-                element:<Contact/>
+                element: <Contact />
             }
         ]
     },
     {
         path: '/',
-        element:<Home/>
+        element: <Home />
+    },
+    {
+        path: 'resource',
+        element: <Resource />
     }
+
+
 ]
 
 export default router
