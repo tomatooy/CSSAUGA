@@ -18,5 +18,10 @@ export const Departments = [
         ID: 'IA',
         name: 'IAIA',
         description: 'IAIA'
+    },
+    {
+        ID: 'Greeter',
+        name: 'Greeter from the board',
+        description: 'HIHIHIHIHIHIHIHIHIHIHIHIHIHIHI'
     }
 ]

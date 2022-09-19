@@ -10,7 +10,7 @@ export default function NavItem() {
     const list = elements.map((element, index) => {
         if (index === 2) {
             return (
-                <Link to='resource' className={styles.link}>
+                <Link to='resource' className={styles.headerLink}>
                     <li className={styles.navItem} id={index}>
                         {element}
                         <SubNavItem category={index} />

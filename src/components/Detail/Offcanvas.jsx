@@ -18,7 +18,7 @@ function OffCanvasExample({ name, ...props }) {
           <Offcanvas.Title>CSSAUGA</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-            <ExpandNav/>
+          <ExpandNav />
         </Offcanvas.Body>
       </Offcanvas>
     </>
@@ -26,11 +26,11 @@ function OffCanvasExample({ name, ...props }) {
 }
 
 export default function OffcanvasButton() {
-    return (
-        <>
-            <OffCanvasExample placement='end' name='end' />
-        </>
-      );
+  return (
+    <>
+      <OffCanvasExample placement='end' name='end' />
+    </>
+  );
 }
 
 

@@ -45,13 +45,15 @@ export default function DetailDisplay() {
         </div>
         )
     ) :
-        (<div className={styles.display}>
-            <div className={styles.headLine}>
-                <h2>Default</h2>
+        (<div className={styles.detailMain}>
+            <div className={styles.display}>
+                <div className={styles.headLine}>
+                    <h2>Default</h2>
+                </div>
+                <p>
+                    default
+                </p>
             </div>
-            <p>
-                Default
-            </p>
             {expandMenu}
         </div>
         );

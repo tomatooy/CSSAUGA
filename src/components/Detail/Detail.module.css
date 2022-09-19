@@ -38,7 +38,7 @@
 
 .menu ul li .link:hover,
 .sublink:hover {
-    background-color: #9c2148;
+    background-color: #ba0c2f;
     background-size: cover;
     color: beige;
     /*this is to highlight the element when you move/hover your mouse over it*/
@@ -63,6 +63,10 @@
     line-height: 2;
     margin: 1em 2em;
 }
+.sublinkSelected {
+    color:#ba0c2f;
+}
+
 
 .expandButton {
     font-size: 3em;

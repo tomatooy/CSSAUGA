@@ -23,7 +23,7 @@ export default function ExpandNav({ to }) {
             changeDisplay1('inline')
         }
     }
-  
+
     useEffect(() => changeSelected(departmentID), [departmentID])
     const { search, pathname } = useLocation();
     console.log(search)
@@ -35,19 +35,23 @@ export default function ExpandNav({ to }) {
                     <Link to={pathname + search} className={styles.link} onClick={() => listClick1()}>Deparments</Link>
                     <ul className={styles.menu} id={styles.subMenu} style={{ display: display1 }}>
                         <li>
-                            <Link to='/detail?department=Greeter' className={styles.sublink} style={displaySelected === 'Greeter' ? ({ color: '#ba0c2f' }) : ({})}>Greeter From President</Link>
+                            <Link to='/detail?department=Greeter' className={`${styles.sublink} ${displaySelected === 'Greeter' ? styles.sublinkSelected : ''}`}>Greeter From President</Link>
+
                         </li>
                         <li>
-                            <Link to='/detail?department=PR' className={styles.sublink} style={displaySelected === 'PR' ? ({ color: '#ba0c2f' }) : ({})}>President/Vice-President</Link>
+                            <Link to='/detail?department=PRES' className={`${styles.sublink} ${displaySelected === 'PRES' ? styles.sublinkSelected : ''}`}>President/Vice-President</Link>
                         </li>
                         <li >
-                            <Link to='/detail?department=IA' className={styles.sublink} style={displaySelected === 'IA' ? ({ color: '#ba0c2f' }) : ({})}>Internal Affair</Link>
+                            <Link to='/detail?department=PA' className={`${styles.sublink} ${displaySelected === 'PA' ? styles.sublinkSelected : ''}`}>PA</Link>
                         </li>
                         <li>
-                            <Link to='/detail?department=IT' className={styles.sublink} style={displaySelected === 'IT' ? ({ color: '#ba0c2f' }) : ({})}>Information Technology</Link>
+                            <Link to='/detail?department=IT' className={`${styles.sublink} ${displaySelected === 'IT' ? styles.sublinkSelected : ''}`}>IT</Link>
                         </li>
                         <li>
-                            <Link to='/detail?department=PT' className={styles.sublink} style={displaySelected === 'PT' ? ({ color: '#ba0c2f' }) : ({})}>PT</Link>
+                            <Link to='/detail?department=PR' className={`${styles.sublink} ${displaySelected === 'PR' ? styles.sublinkSelected : ''}`}>PR</Link>
+                        </li>
+                        <li>
+                            <Link to='/detail?department=TR' className={`${styles.sublink} ${displaySelected === 'TR' ? styles.sublinkSelected : ''}`}>TR</Link>
                         </li>
                     </ul>
                 </li>
