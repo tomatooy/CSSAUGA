@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 
 
 export default function SubNavItem(props) {
+    console.log(props.changeActive)
     const { category } = props
     const content = [
         [
@@ -23,7 +24,7 @@ export default function SubNavItem(props) {
     ).map(element => {
         return (
             <li>
-                <Link className={styles.headerLink} to={element[1]} >
+                <Link className={styles.headerLink} to={element[1]} onClick={props.changeActive}>
                     {element[0]}
                 </Link>
             </li>)

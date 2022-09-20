@@ -4,6 +4,10 @@ import styles from './Header.module.css'
 import { Link } from 'react-router-dom'
 export default function Header() {
     const [navActive, changeActive] = useState(false);
+    const mobileRedirect = () =>{
+        changeActive(false);
+        window.scrollTo(0, 0);
+    }
     return (
         <div className={styles.headerWrapper}>
             <header className={styles.header}>
@@ -16,7 +20,7 @@ export default function Header() {
                     </span>
                 </div>
                 <ul className={`${styles.navList} ${navActive?styles.navActive:styles.navNotActive}`}>
-                    <NavItem active={navActive} />
+                    <NavItem active={navActive} changeActive={mobileRedirect} />
                 </ul>
 
             </header>
