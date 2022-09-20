@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import styles from './Detail.module.css'
 import { useLocation } from 'react-router-dom';
 import { Departments } from './DetailData'
@@ -10,7 +10,8 @@ export default function DetailDisplay() {
         const { search } = useLocation();
         return React.useMemo(() => new URLSearchParams(search), [search]);
     }
-    const [isMobile, setIsMobile] = useState(window.innerWidth<400)
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 600)
+
 
     //choose the screen size 
     const handleResize = () => {
@@ -21,12 +22,10 @@ export default function DetailDisplay() {
         }
     }
 
-    // create an event listener
-    useEffect(() => {
-        window.addEventListener("resize", handleResize)
-    })
+    window.addEventListener('resize', handleResize);
 
-    const expandMenu = isMobile ? <OffcanvasButton/>:<ExpandNav/>
+
+    const expandMenu = isMobile ? <OffcanvasButton /> : <ExpandNav />
 
 
     const departmentID = useQuery().get('department');

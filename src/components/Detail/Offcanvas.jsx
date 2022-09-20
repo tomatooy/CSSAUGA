@@ -6,10 +6,11 @@ import { BsChevronDoubleLeft } from "react-icons/bs";
 
 function OffCanvasExample({ name, ...props }) {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
+  const closeNav = () =>{
+    handleClose();
+  }
   return (
     <>
       <button className={styles.expandButton} onClick={handleShow}><BsChevronDoubleLeft /></button>
@@ -18,7 +19,7 @@ function OffCanvasExample({ name, ...props }) {
           <Offcanvas.Title>CSSAUGA</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <ExpandNav />
+          <ExpandNav closeNav={closeNav}/>
         </Offcanvas.Body>
       </Offcanvas>
     </>
