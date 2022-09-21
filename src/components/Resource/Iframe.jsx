@@ -8,7 +8,7 @@ export default function Frame() {
             <div className={styles.resourceHeader}>New Student Handbook</div>
             <a href='https://drive.google.com/u/1/uc?id=1BxfGh16fSAJl2Vs_jgnrsxTrFJQifdft&export=download' className={styles.downloadButton}>DOWNLOAD PDF</a>
             <div className={styles.iframe}>
-                <iframe src="https://drive.google.com/u/1/uc?id=1BxfGh16fSAJl2Vs_jgnrsxTrFJQifdft&export=view" title='guidepdf' allow="autoplay"></iframe>
+                <iframe src="https://drive.google.com/u/1/uc?id=1BxfGh16fSAJl2Vs_jgnrsxTrFJQifdft&export=view#view=Fit" title='guidepdf'></iframe>
             </div>
         </div>
     )
