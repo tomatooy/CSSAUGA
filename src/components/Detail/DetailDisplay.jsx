@@ -1,34 +1,19 @@
-import React, {useState} from 'react'
+import React from 'react'
 import styles from './Detail.module.css'
 import { useLocation } from 'react-router-dom';
 import { Departments } from './DetailData'
-import OffcanvasButton from './Offcanvas';
-import ExpandNav from './ExpandNav'
+import ResponsiveNav from './Offcanvas';
+
 
 export default function DetailDisplay() {
     function useQuery() {
         const { search } = useLocation();
         return React.useMemo(() => new URLSearchParams(search), [search]);
     }
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 600)
-
-
-    //choose the screen size 
-    const handleResize = () => {
-        if (window.innerWidth < 600) {
-            setIsMobile(true)
-        } else {
-            setIsMobile(false)
-        }
-    }
-
-    window.addEventListener('resize', handleResize);
-
-
-    const expandMenu = isMobile ? <OffcanvasButton /> : <ExpandNav />
 
 
     const departmentID = useQuery().get('department');
+    console.log(departmentID)
     const query = Departments.find(element => element.ID === departmentID)
     const result = query ? (
         (<div className={styles.detailMain}>
@@ -40,7 +25,7 @@ export default function DetailDisplay() {
                     {query.description}
                 </p>
             </div>
-            {expandMenu}
+            <ResponsiveNav/>
         </div>
         )
     ) :
@@ -53,7 +38,7 @@ export default function DetailDisplay() {
                     default
                 </p>
             </div>
-            {expandMenu}
+            <ResponsiveNav/>
         </div>
         );
 

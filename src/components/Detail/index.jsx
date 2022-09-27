@@ -8,6 +8,5 @@ export default function index() {
   return (
     
         <DetailDisplay/>
-
   )
 }

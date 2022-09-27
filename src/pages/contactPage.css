@@ -1,0 +1,9 @@
+.socialPageWrapper{
+    display: flex;
+}
+.socialMain{
+    width: 100%;
+}
+.wrapper{
+    width: 80%;
+}

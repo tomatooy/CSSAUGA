@@ -26,10 +26,25 @@ function OffCanvasExample({ name, ...props }) {
   );
 }
 
-export default function OffcanvasButton() {
+export default function ResponsiveNav() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 600)
+
+
+    //choose the screen size 
+    const handleResize = () => {
+        if (window.innerWidth < 600) {
+            setIsMobile(true)
+        } else {
+            setIsMobile(false)
+        }
+    }
+
+    window.addEventListener('resize', handleResize);
+
+
   return (
     <>
-      <OffCanvasExample placement='end' name='end' />
+      {isMobile?<OffCanvasExample placement='end' name='end'/>:<ExpandNav/>}
     </>
   );
 }

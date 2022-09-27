@@ -53,6 +53,14 @@
     margin-top: 2em;
     text-align: center;
 }
+.detailMainSocial{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 2em;
+    text-align: center;
+}
 
 #subMenu {
     display: inline;
@@ -64,7 +72,7 @@
     margin: 1em 2em;
 }
 .sublinkSelected {
-    color:#ba0c2f;
+    color:#ba0c2f !important;
 }
 
 
@@ -82,10 +90,16 @@
     color: #999;
 }
 
+
 @media screen and (max-width:600px) {
     .detailMain {
         display: block;
         margin: 2em auto;
+    }
+    .detailMainSocial{
+        display: block;
+        width: 100%;
+        margin: 2em 0;
     }
 
     .display {

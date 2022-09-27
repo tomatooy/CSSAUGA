@@ -1,6 +1,6 @@
 import Home from '../pages/Home'
 import Detail from '../components/Detail'
-import Contact from '../components/Detail/Contact'
+import ContactPage from '../pages/ContactPage'
 import Resource from '../components/Resource'
 const router = [
     {
@@ -9,7 +9,7 @@ const router = [
         Children: [
             {
                 path: 'contact',
-                element: <Contact />
+                element: <ContactPage />
             }
         ]
     },
@@ -20,6 +20,10 @@ const router = [
     {
         path: 'resource',
         element: <Resource />
+    },
+    {
+        path:'/detail/contact',
+        element:<ContactPage/>
     }
 
 

@@ -10,7 +10,6 @@ export default function ExpandNav(props) {
 
     function useQuery() {
         const { search } = useLocation();
-
         return React.useMemo(() => new URLSearchParams(search), [search]);
     }
     const departmentID = useQuery().get('department');
@@ -26,7 +25,6 @@ export default function ExpandNav(props) {
 
     useEffect(() => changeSelected(departmentID), [departmentID])
     const { search, pathname } = useLocation();
-    console.log(search)
 
     return (
         <div className={styles.menu}>
@@ -56,7 +54,7 @@ export default function ExpandNav(props) {
                     </ul>
                 </li>
                 <li>
-                    <Link to='contact' className={styles.link}>Contact Us</Link>
+                    <Link to='/detail/contact' className={`${styles.link} ${pathname ==='/detail/contact' ? styles.sublinkSelected : ''}`}>Contact Us</Link>
                 </li>
                 <li>
                     <Link to={pathname + search} className={styles.link}>Join Us</Link>
