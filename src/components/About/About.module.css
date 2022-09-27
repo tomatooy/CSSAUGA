@@ -14,7 +14,6 @@
     text-align: center;
 }
 
-
 .bannerUpper{
     background-color: #ba0c2f;
     color: white;
@@ -36,6 +35,7 @@
 }
 
 .bannerPic img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }

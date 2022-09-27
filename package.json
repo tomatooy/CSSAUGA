@@ -13,6 +13,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-iframe": "^1.8.0",
+    "react-lightbox-gallery": "^2.0.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "swiper": "^8.2.4",

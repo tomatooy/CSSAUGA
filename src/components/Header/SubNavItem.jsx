@@ -9,8 +9,8 @@ export default function SubNavItem(props) {
     const content = [
         [
             ['About Us', '/detail?department=Greeter'],
-            ['Gallery','/detail?page=gallery'], 
-            ['Contact Us','']
+            ['Gallery','/gallery'], 
+            ['Contact Us','/detail/contact']
         ],
         [
             ['Athens News',''], 

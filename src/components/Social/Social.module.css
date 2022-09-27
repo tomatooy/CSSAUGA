@@ -42,11 +42,13 @@
     padding: 20px 0;
     list-style: none;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .liContainer {
     display: flex;
     margin: 0.5em 0;
+    width:300px;
 }
 
 .footerBold{
@@ -59,6 +61,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 1em;
+    text-align:start;
     
 }
 
@@ -73,7 +76,6 @@
        margin: 0;  
    }
    .socialText{
-       text-align:start;
        margin-left: 3em;
    }
    .socialHeader h1,h3{

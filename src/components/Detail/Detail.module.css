@@ -82,12 +82,14 @@
     border: none;
     color: black;
     cursor: pointer;
-    display: flex;
-    position: absolute;
+    position: sticky;
     bottom: 1em;
-    right: 20px;
+    float: right;
     background-color: transparent;
     color: #999;
+    width:fit-content;
+    z-index:9;
+    
 }
 
 

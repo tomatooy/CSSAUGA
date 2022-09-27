@@ -15,7 +15,7 @@ export default function About() {
             </div>
             <div className={styles.main}>
                 <div className={styles.bannerPic}>
-                    <img src={pic} alt="" />
+                    <img className={styles.aboutImg} src={pic} alt="" />
                 </div>
                 <div className={styles.bannerText}>
                     <div className={styles.lowerTextWrapper}>

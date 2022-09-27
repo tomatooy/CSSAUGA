@@ -7,3 +7,16 @@
 .wrapper{
     width: 80%;
 }
+.bulldog{
+    position: absolute;
+    max-height: 200px;
+    max-width: 200px;
+    bottom: 3em;
+}
+
+@media screen and (max-width: 500px){
+    .bulldog{
+        position: relative;
+        bottom: unset;
+    }
+}

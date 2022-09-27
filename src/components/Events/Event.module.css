@@ -50,6 +50,8 @@
 .eventPic img {
     aspect-ratio: auto 860 / 360;
     height: auto;
+    object-fit: cover;
+    width: 100%;
 }
 
 .eventTitleWrap {
@@ -74,8 +76,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  
-
     .event{
         width: 100%;
         margin: 1em auto;
