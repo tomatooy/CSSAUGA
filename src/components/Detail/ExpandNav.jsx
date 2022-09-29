@@ -27,7 +27,7 @@ export default function ExpandNav(props) {
     const { search, pathname } = useLocation();
 
     return (
-        <div className={styles.menu}>
+        <div className={styles.menu} id={styles.main} >
             <ul className={styles.subMenu} id={styles.subMenu} >
                 <li className={styles.link}>
                     <Link to={pathname + search} className={styles.link} onClick={() => listClick1()}>Deparments</Link>

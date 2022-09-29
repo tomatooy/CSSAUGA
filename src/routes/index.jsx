@@ -3,6 +3,7 @@ import Detail from '../components/Detail'
 import ContactPage from '../pages/ContactPage'
 import Resource from '../components/Resource'
 import Gallery from '../components/Gallery'
+import Post from '../pages/Post'
 const router = [
     {
         path: '/detail',
@@ -23,6 +24,10 @@ const router = [
     {
         path:'/gallery',
         element:<Gallery />
+    },
+    {
+        path:'/post',
+        element:<Post/>
     }
 
 

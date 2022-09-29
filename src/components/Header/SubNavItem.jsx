@@ -9,25 +9,45 @@ export default function SubNavItem(props) {
     const content = [
         [
             ['About Us', '/detail?department=Greeter'],
-            ['Gallery','/gallery'], 
-            ['Contact Us','/detail/contact']
+            ['Gallery', '/gallery'],
+            ['Contact Us', '/detail/contact']
         ],
         [
-            ['Athens News',''], 
-            ['Bulldog News',''], 
-            ['Community','']
+            ['UGA News', 'https://news.uga.edu/'],
+            ['UGA Reddit', 'https://www.reddit.com/r/UGA/'],
         ],
         []
     ]
-    const subList = content.find((_, index) =>
-        index === category
-    ).map(element => {
-        return (
-            <li>
-                <Link className={styles.headerLink} to={element[1]} onClick={props.changeActive}>
-                    {element[0]}
-                </Link>
-            </li>)
-    })
+    let subList
+
+    if (category === 1) {
+
+        subList = content.find((_, index) =>
+            index === 1
+        ).map(element => {
+            return (
+                <li>
+                    <a className={styles.headerLink} href={element[1]} onClick={props.changeActive}>
+                        {element[0]}
+                    </a>
+                </li>
+            )
+        })
+
+    }
+    else {
+
+        subList = content.find((_, index) =>
+            index === category
+        ).map(element => {
+            return (
+                <li>
+                    <Link className={styles.headerLink} to={element[1]} onClick={props.changeActive}>
+                        {element[0]}
+                    </Link>
+                </li>
+            )
+        })
+    }
     return <ul className={styles.subList}>{subList}</ul>;
 }
