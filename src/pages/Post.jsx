@@ -5,7 +5,7 @@ export default function Post() {
     const [activityUrl,changeUrl] = useState('')
     let url = 'https://mp.weixin.qq.com/s/sgGqMFzxwa8oFnLC9fJ1tA'
     let http = (window.location.protocol === 'http:' ? 'http:' : 'https:');
-    let realurl = http + '//localhost:8080/' + url;
+    let realurl = 'https://sever-temp.vercel.app/' + url;
     axios.get(realurl).then(res => {
         changeUrl( res.data.replace(/data-src/g,  "src" ))
     }, rej => {

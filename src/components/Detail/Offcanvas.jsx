@@ -46,7 +46,7 @@ export default function ResponsiveNav() {
     <>
       {isMobile?<OffCanvasExample placement='end' name='end'/>:<ExpandNav/>}
     </>
-  );
+  )
 }
 
 

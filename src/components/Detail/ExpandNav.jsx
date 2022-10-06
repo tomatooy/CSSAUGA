@@ -60,7 +60,7 @@ export default function ExpandNav(props) {
                     <Link to={pathname + search} className={styles.link}>Join Us</Link>
                 </li>
                 <li>
-                    <Link to={pathname + search} className={styles.link}>Gallery</Link>
+                    <Link to="/gallery" className={styles.link}>Gallery</Link>
                 </li>
             </ul>
         </div>

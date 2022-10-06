@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 
 
 export default function SubNavItem(props) {
-    console.log(props.changeActive)
     const { category } = props
     const content = [
         [
@@ -15,6 +14,7 @@ export default function SubNavItem(props) {
         [
             ['UGA News', 'https://news.uga.edu/'],
             ['UGA Reddit', 'https://www.reddit.com/r/UGA/'],
+            ["MyUGAPortal","https://my.uga.edu/htmlportal/"]
         ],
         []
     ]
