@@ -30,14 +30,11 @@ export default function ExpandNav(props) {
         <div className={styles.menu} id={styles.main} >
             <ul className={styles.subMenu} id={styles.subMenu} >
                 <li className={styles.link}>
-                    <Link to={pathname + search} className={styles.link} onClick={() => listClick1()}>Deparments</Link>
+                    <Link to={pathname + search} className={styles.link} onClick={() => listClick1()}>Introduction</Link>
                     <ul className={styles.menu} id={styles.subMenu} style={{ display: display1 }}>
                         <li>
-                            <Link to='/detail?department=Greeter' className={`${styles.sublink} ${displaySelected === 'Greeter' ? styles.sublinkSelected : ''}` } onClick={closeNav}>Greeter From President</Link>
+                            <Link to='/detail?department=Greeter' className={`${styles.sublink} ${displaySelected === 'Greeter' ? styles.sublinkSelected : ''}` } onClick={closeNav}>What is CSSA?</Link>
 
-                        </li>
-                        <li>
-                            <Link to='/detail?department=PRES' className={`${styles.sublink} ${displaySelected === 'PRES' ? styles.sublinkSelected : ''}`} onClick={closeNav}>President/Vice-President</Link>
                         </li>
                         <li >
                             <Link to='/detail?department=PA' className={`${styles.sublink} ${displaySelected === 'PA' ? styles.sublinkSelected : ''}`} onClick={closeNav}>PA</Link>

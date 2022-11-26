@@ -1,12 +1,12 @@
 .menu {
     /*defining css for the menu class which will be used by all menus*/
-    width: max-content;
+    width: 30%;
     /* sets the width of the menu*/
-    width: 15%;
-    padding-left:1em;
+    padding:1em 2em;
+    background-color:white;
+    border-radius:10%;
 }
 #main{
-    border-left: 1px solid gray;
 }
 .menu ul {
     list-style-type: none;
