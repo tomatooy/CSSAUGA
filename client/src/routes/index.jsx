@@ -4,6 +4,7 @@ import ContactPage from '../pages/ContactPage'
 import Resource from '../components/Resource'
 import Gallery from '../components/Gallery'
 import Post from '../pages/Post'
+import Event from '../components/Events/EventList'
 const router = [
     {
         path: '/detail',
@@ -26,10 +27,10 @@ const router = [
         element:<Gallery />
     },
     {
-        path:'/post',
+        path:'/post/:postId',
         element:<Post/>
-    }
-
+    },
+  
 
 ]
 

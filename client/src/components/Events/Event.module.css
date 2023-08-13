@@ -46,7 +46,9 @@
     overflow: hidden;
 
 }
-
+.eventTitle{
+    color: black;
+}
 .eventPic img {
     aspect-ratio: auto 860 / 360;
     height: auto;
