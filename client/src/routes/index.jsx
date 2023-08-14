@@ -5,6 +5,7 @@ import Resource from '../components/Resource'
 import Gallery from '../components/Gallery'
 import Post from '../pages/Post'
 import Event from '../components/Events/EventList'
+import JoinForm from '../pages/JoinForm'
 const router = [
     {
         path: '/detail',
@@ -30,7 +31,10 @@ const router = [
         path:'/post/:postId',
         element:<Post/>
     },
-  
+    {
+        path:'/joinus',
+        element:<JoinForm/>
+    },
 
 ]
 

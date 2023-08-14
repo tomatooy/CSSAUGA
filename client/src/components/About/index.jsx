@@ -28,7 +28,7 @@ export default function About() {
                             <li><strong>Build the community.</strong>The purpose of Chinese Students and Scholars Association is to promote social interactions between Chinese and other ethnic groups, and provide social and academic support to the UGA Chinese student population.</li>
                             <li><strong>Leadership skills.</strong>From hosting the events, CSSA will provide you opportunities to learn the best way to communicate with both individuals and large groups</li>
                         </ul>
-                        <Link to="" className={styles.joinUs}>
+                        <Link to="joinus" className={styles.joinUs}>
                             Join Us
                         </Link>
                     </div>

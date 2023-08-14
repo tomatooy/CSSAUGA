@@ -54,7 +54,7 @@ export default function ExpandNav(props) {
                     <Link to='/detail/contact' className={`${styles.link} ${pathname ==='/detail/contact' ? styles.sublinkSelected : ''}`}>Contact Us</Link>
                 </li>
                 <li>
-                    <Link to={pathname + search} className={styles.link}>Join Us</Link>
+                    <Link to='/joinus' className={styles.link}>Join Us</Link>
                 </li>
                 <li>
                     <Link to="/gallery" className={styles.link}>Gallery</Link>
