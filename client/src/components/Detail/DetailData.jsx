@@ -1,33 +1,43 @@
 export const Departments = [
     {
         ID: 'IT',
-        name: 'Information Technology',
-        description: 'Information Technology department is mainly responsible for updating and maintaining WeChat App and website, providing technical support to other departments in each semester, web forum and WeChat App development, forum maintenance, copywriting, UI design, interaction experience, data management, event planning and real-time communication with other departments.'
+        name: 'IT Consultant(信息技术与咨询)',
+        description: ['信息技术部主要负责微信App和网站的更新和维护，每学期为其他部门提供技术支持，网络论坛和微信App开发、论坛维护、文案撰写、UI设计、交互体验、数据管理、活动策划和实战- 与其他部门及时沟通。'],
+        img:"https://media.discordapp.net/attachments/940402118953668642/1141793090089271436/WeChat_Screenshot_20230817134425.png"
     },
     {
         ID: 'PA',
-        name: 'Plan and Administration',
-        description: 'PA is the core department in the CSSA. It is responsible for all events from the early planning to the execution at the venue. As events are the main source of public to get to know about CSSA, so the job of the PA is very important.If you love life, like to deal with all kinds of people, want to know all the secrets behind every big event, have some experience in organizing events, have some new ideas, and have a passion to try, then the Planning adn Administration Department is definitely the best choice for you'
+        name: '策划管理部(Plan and Administration)',
+        description: ['PA部门是CSSA的核心部门，新的内部结构是两个策划总监+ 一个IT顾问，以及所有PA部员。PA也是这些部门中人数众多的一个，所属成员将负责策划并实施CSSA各类大大小小的活动。前期活动流程策划，人员分配，场地预定、布置和设计，物资采购，活动当天的执行，和活动结束后的收尾工作都是必不可少的。欢迎有创新力，脑洞大，社交能力强，善于与人合作，乐于沟通表达，活好且腰更好的朋友们加入！'],
+        img:"https://media.discordapp.net/attachments/940402118953668642/1141793091192373248/WeChat_Screenshot_20230817135706.png"
     },
     {
         ID: 'PR',
-        name: 'Public Relation',
-        description: 'Public relation deparment serve as a bridge between CSSA and the outside world, providing financial support for the entire CSSA. We represent the CSSA to local businesses and the media, seeking to increase the benefits for UGA Chinese students and scholars, and strengthening the ties between the CSSA and the university as well as the local community.'
+        name: '外联部(Public Relation)',
+        description: ['外联部主要负责CSSA与学校别的组织、赞助商，以及合作的企业保持沟通与良好的关系 来签订合同和未来合作。专业不限，性格偏外向，善于沟通，喜欢社交，业务能力到位，学习能力强，认识人源较广会优先考虑。各位社牛人士快快行动起来！'],
+        img:"https://media.discordapp.net/attachments/940402118953668642/1141793090378661918/WeChat_Screenshot_20230817134448.png"
     },
     {
         ID: 'TR',
-        name: 'Treasure',
-        description: 'Treasure is the vault of the CSSA that controls the economic resources for all CSSA activities. We are responsible for all finance related matters, such as accounting and transferring funds, accounting for materials, auditing budgets for all departments, verifying invoices, and completing financial statements',
-        image:'',
-        qualification:''
+        name: '财务部(Treasure)',
+        
+        description: ['作为CSSA的后勤保障，负责所有开支报销，整理好活动预算在学校的拨款听证会演讲，以及活动结束后做好账目报表。除此之外还需与主席副主席同行参加ISL主办会议。我们希望你能熟练运用Excel，做事细心认真，有责任心。脑子够聪明，思维够跳跃，以及能和每个部门做好交流沟通。'],
+        img:"https://media.discordapp.net/attachments/940402118953668642/1141794058428235896/image.png"
     },
     {
         ID: 'Greeter',
-        name: 'Greeter from the board',
-        description: 'HIHIHIHIHIHIHIHIHIHIHIHIHIHIHI'
+        name: '什么是UGACSSA',
+        description: [
+            'UGA CSSA 是校内唯一一个中国大使馆注册备案并主要面向中国大陆学生学者的学生组织。CSSA委员会包括主席，副主席，财务官以及5位部长及40余位成员组成。如今已发展成拥有1000多名在校成员的大型非营利性学生组织。如今，我们秉承丰富雅典华人生活，弘扬中华民族文化，促进学生职业发展的三大目标，每年举办包括中秋晚会，中国文化讲座，职业招聘会，春节晚会等十余项不同形式不同内容的活动，吸引上千人次参加，影响力进一步提高。'
+            , '行动起来吧！🎉又是一个学期了，不知道同学们这个学期是否尝试了一些新的东西。没有尝试的话别灰心！想要丰富课外生活么？提升简历内容？或者结识一些有趣的灵魂？听起来都蛮不错的！期待你会在未来学生会里留下你的印记！',
+            '现在就点击旁边的目录了解下各个部门吧！准备好的话就点击‘加入我们’填写表格吧！UGA CSSA欢迎你的加入！'
+        ]
+        , img:"https://media.discordapp.net/attachments/940402118953668642/1141793089510441071/69648819_1288308117999805_8347645599817924608_n.jpg?width=1031&height=676"
     },
     {
-
-    }
-    
+        ID: 'AD',
+        name: '宣传部门(Advertising)',
+        description: ['AD部门主要负责学生会所有活动宣传海报的制作，拍摄活动照片，活动宣传，微信公众号与Instagram等社交平台的运营。如果你有这方面的工作经验或者是一个对设计、写作、摄影、剪辑非常感兴趣的童鞋快来加入AD部吧！'],
+        img:"https://media.discordapp.net/attachments/940402118953668642/1141793089816645745/WeChat_Screenshot_20230817134408.png"
+    },
 ]

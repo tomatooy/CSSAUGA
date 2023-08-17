@@ -12,12 +12,12 @@ import { Pagination } from "swiper";
 
 
 const departments = [
-    ['Advertising(AD)', 'Responsible for event promotion and manage social media on different platforms'],
-    ['Information Technologhy(IT)', 'Provide technical assitance for events and other deparments and internal informations management'],
-    ['Plan and Administration(PA)', 'Core department of CSSA, responsible for major events from planning to hosting'],
-    ['Public Relationships(PR)', 'Primary job is to asscoiate with merchants and companies to set up partnership and sponsorship for events'],
-    ['Treasure(TR)', 'Treasurers are responsible for approving all student organization financial transactions. Treasurers are expected to maintain records tracking every income and expense financial transaction.'],
-    ['Information Technologhy', 'babababablal'],
+    ['Advertising','宣传部', 'Responsible for event promotion and manage social media on different platforms','负责活动推广及各平台社交媒体管理',],
+    ['Information Technologhy','信息技术', 'Provide technical assitance for events and other deparments and internal informations management','为活动及其他部门及内部信息管理提供技术支持'],
+    ['Plan and Administration', '策划管理部','Core department of CSSA, responsible for major events from planning to hosting','CSSA核心部门，负责重大活动的策划与主办'],
+    ['Public Relationships', '外联部','Primary job is to asscoiate with merchants and companies to set up partnership and sponsorship for events','主要工作是与商家和公司建立合作伙伴关系并赞助活动'],
+    ['Treasure(TR)', '财务部','Treasurers are responsible for approving all student organization financial transactions.','CSSA的经济枢纽，掌控着CSSA平时所有活动的经济来源。'],
+    
   ]
 
 export default function Departments() {
@@ -25,9 +25,11 @@ export default function Departments() {
         return(
           <SwiperSlide className={styles.departmentSlide}>
             <div className={styles.departmentEle}>
-            <h2 className={styles.departmentName}>{department[0]}</h2>
+            <h2 className={styles.departmentName}>{department[0]}<br/><span>{department[1]}</span></h2>
+
             <div className={styles.departmentDetails}>
-              <p>{department[1]}</p>
+              <p>{department[2]} <br/>{department[3]}</p>
+
             </div>
             <Link to="/detail?department=IT" className={styles.detailButton}>
               LEARN MORE

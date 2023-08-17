@@ -33,18 +33,23 @@
     width: 25%;
     margin: 3%;
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
+    overflow: hidden;
+
 }
 .event:hover{
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 12px 25px 0 rgba(0, 0, 0, 0.19);
 }
+.event:hover .eventPic{
+    transform: scale(1.2); /* Apply zoom to the image on card hover */
+    
+}
 
 .eventPic {
-    height: auto;
     overflow: hidden;
-
+    transition: transform 0.3s;
+    margin-bottom: 10px; 
 }
 .eventTitle{
     color: black;
@@ -54,15 +59,10 @@
     height: auto;
     object-fit: cover;
     width: 100%;
+    overflow: hidden;
 }
 
-.eventTitleWrap {
-    float: left;
-    margin-left: 10px;
-    text-align: start;
-    font-weight: normal;
 
-}
 
 .eventDescription {
     line-height: 1.5;
@@ -70,6 +70,8 @@
     overflow-wrap: break-word;
     text-align: start;
     margin-left: 10px;
+    padding-top: 20px;
+    background-color: white;
 }
 
 .eventDate {

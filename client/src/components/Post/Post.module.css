@@ -38,7 +38,14 @@
     padding: 10px;
     overflow-y: auto;
     padding: 20px;
+    font-family: 'Merriweather Sans', sans-serif;
     
+}
+.cardBody{
+    z-index: 3;
+    font-weight:bold;
+    display: inline;
+    background-color: white;
 }
 
 span {
@@ -55,10 +62,25 @@ span {
 .cardImg{
     height: 20vh;
     width: 20vw;
+    transition: transform 0.3s; /* Add smooth transition effect */
 }
 .card{
     overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    transition: transform 0.3s;
 }
+
+.card:hover .cardImg {
+    transform: scale(1.2); /* Apply zoom to the image on card hover */
+  }
+
+.card:hover{
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 12px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 .moreHeader {
     border-bottom: 2px solid;
     border-image: linear-gradient(to right, var(--theme-color), 50%, transparent 50%) 100% 1;

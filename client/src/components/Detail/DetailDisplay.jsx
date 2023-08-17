@@ -13,17 +13,20 @@ export default function DetailDisplay() {
 
 
     const departmentID = useQuery().get('department');
-    console.log(departmentID)
     const query = Departments.find(element => element.ID === departmentID)
     const result = query ? (
         (<div className={styles.detailMain}>
             <div className={styles.display}>
                 <div className={styles.headLine}>
                     <h2>{query.name}</h2>
+                    <br/>
                 </div>
-                <p>
-                    {query.description}
-                </p>
+                {
+                    query.description.map((paragraph)=>{
+                        return (<><p>{paragraph}</p><br/></>)
+                    })
+                }
+                <img src={query.img} alt="ima" />
             </div>
             <ResponsiveNav/>
         </div>

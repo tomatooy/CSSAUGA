@@ -7,7 +7,6 @@ export default function Slide(props) {
         "color": "black"
     }
     const { data } = props
-    console.log(data)
     const { coverUrl, _id, title, header } = data
     return (
         <Link to={`/post/${_id}`} style={linkStyle}>

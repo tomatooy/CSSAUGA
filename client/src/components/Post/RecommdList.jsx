@@ -24,7 +24,7 @@ export default function RecommdList() {
         recData ? (
           recData.map((data) => {
             return (
-              <a style={linkstyle} href={`/post/${data._id}`} onClick={() => {fetch(data._id)}} >
+              <a style={linkstyle} href={`/post/${data._id}`} >
                 <RecommondCard data={data} />
               </a>
             )
