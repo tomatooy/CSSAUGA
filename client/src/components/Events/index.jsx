@@ -11,7 +11,7 @@ export default function Events() {
 
   return (
     <div className={styles.eventsWrapper}>
-      <div className={styles.eventHeader}>LATEST EVENTS</div>
+      <div className={styles.eventHeader}>LATEST POSTS</div>
       <div className={styles.mainDisplay}>
         {
           eventData?(

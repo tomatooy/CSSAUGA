@@ -1,16 +1,25 @@
 import React from 'react'
 import styles from './Swiper.module.css'
-export default function Slide() {
+import { Link } from 'react-router-dom'
+export default function Slide(props) {
+    const linkStyle = {
+        "text-decoration": "none",
+        "color": "black"
+    }
+    const { data } = props
+    console.log(data)
+    const { coverUrl, _id, title, header } = data
     return (
-        <div className={styles.swiperSlide}>
-            <img className={styles.swiperImg} src="https://cdn.discordapp.com/attachments/940402118953668642/989613875836117032/IMG_4382.jpg" alt="x" />
-            <div className={styles.slideCaption}>
-                <div className={styles.textHolder}>
-                <h1>Place holder for slide header</h1>
-                <h4>Place holder for slide brief description
-                </h4>
+        <Link to={`/post/${_id}`} style={linkStyle}>
+            <div className={styles.swiperSlide}>
+                <img className={styles.swiperImg} src={coverUrl} alt="x" />
+                <div className={styles.slideCaption}>
+                    <div className={styles.textHolder}>
+                        <h1>{title}</h1>
+                        <h4>{header}</h4>
+                    </div>
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }

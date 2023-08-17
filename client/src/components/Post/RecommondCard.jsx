@@ -1,23 +1,28 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
+import styles from './Post.module.css'
+import { Link } from 'react-router-dom';
+export default function RecommondCard(props) {
+ 
 
-export default function RecommondCard() {
-  const cardstyle = {"max-width":"400px"}
-
+  console.log(props)
+  const {coverUrl,title,createdAt} = props.data
   return (
-    <div>
-    <Card>
-      <Card.Img variant="left" src="https://cdn.discordapp.com/attachments/940402118953668642/989613875836117032/IMG_4382.jpg" style={cardstyle}/>
+    <>
+    <Card className={styles.card}>
+      <Card.Img variant="left" src={coverUrl} className={styles.cardImg} />
       <Card.Body>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          {title}
+        </Card.Text>
+        <Card.Text>
+          {createdAt}
         </Card.Text>
       </Card.Body>
     </Card>
     <br />
-    
-  </div>
+    </>
+
   )
   
 }

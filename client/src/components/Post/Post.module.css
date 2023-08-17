@@ -1,54 +1,3 @@
-.menu {
-    /*defining css for the menu class which will be used by all menus*/
-    width: 30%;
-    /* sets the width of the menu*/
-    padding:1em 2em;
-    background-color:white;
-    border-radius:10%;
-}
-
-.menu ul {
-    list-style-type: none;
-    /*to disable the bullets that appear in lists*/
-    padding-left: 0px;
-    /*to disable list paddings on the left side*/
-
-}
-
-
-.menu ul li .link,
-.sublink {
-    padding: 10px 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: max-content;
-
-}
-
-.sublink {
-    margin-left: 10px;
-}
-
-.menu ul li .link,
-.sublink {
-    text-decoration: none;
-    color: black;
-    display: block;
-    text-align: start;
-}
-
-.menu ul li .link:hover,
-.sublink:hover {
-    background-color: #ba0c2f;
-    background-size: cover;
-    color: beige;
-    /*this is to highlight the element when you move/hover your mouse over it*/
-}
-.sublinkSelected:hover{
-    color:beige;
-}
-
-
 .detailMain {
     display: flex;
     width: 80%;
@@ -57,27 +6,64 @@
     margin-top: 2em;
     text-align: center;
 }
-.detailMainSocial{
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
-    margin: auto;
-    margin-top: 2em;
-    text-align: center;
-}
 
-#subMenu {
-    display: inline;
-}
+
 
 .display {
-    width: 60%;
+    width: 50%;
     line-height: 2;
     margin: 1em 2em;
     overflow-wrap: break-word;
 }
+
 .sublinkSelected {
-    color:#ba0c2f;
+    color: #ba0c2f;
+}
+
+.contentMain {
+    max-width: 60%;
+}
+
+.contentMain img {
+    max-width: 100px;
+}
+
+.recListMain{
+    max-width: 25%;
+    top:0;
+    position:sticky;
+    align-self: flex-start;
+    z-index: 1;
+    background-color: white;
+    padding: 10px;
+    overflow-y: auto;
+    padding: 20px;
+    
+}
+
+span {
+    display: inline-flex;
+    /* Make the span an inline block */
+    max-width: 100%;
+    /* Limit the span's width to the container's width */
+    white-space: nowrap;
+    /* Prevent text from wrapping to the next line */
+    overflow: hidden;
+    /* Hide any content that overflows the span */
+    text-overflow: ellipsis;
+}
+.cardImg{
+    height: 20vh;
+    width: 20vw;
+}
+.card{
+    overflow: hidden;
+}
+.moreHeader {
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, var(--theme-color), 50%, transparent 50%) 100% 1;
+    width: max-content;
+
 }
 
 
@@ -88,17 +74,31 @@
         display: block;
         margin: 2em auto;
     }
-    .detailMainSocial{
+
+    .detailMainSocial {
         display: block;
         width: 100%;
         margin: 2em 0;
     }
 
+    .contentMain {
+        max-width: 100%;
+    }
+
     .display {
+        width: 100%;
         margin: auto;
     }
 
-    #main{
+    #main {
         border: none
+    }
+    .recListMain{
+        max-width: 100%;
+        margin:0
+    }
+    .cardImg{
+        height: auto;
+        width: auto;
     }
 }
