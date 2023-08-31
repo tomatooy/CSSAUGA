@@ -26,8 +26,9 @@ export default function Events() {
 
 
  async function fectch(){
+  const url = process.env.REACT_APP_SERVER_URL
     try {
-      const res =  await axios.get("https://test-backend-oy-568f2cb4e272.herokuapp.com/post/get")
+      const res =  await axios.get(`${url}post/get`)
       setEvent(res.data)
     } catch (error) {
       console.log(error.message)

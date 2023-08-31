@@ -21,8 +21,8 @@ export default function JoinForm() {
     }
 
     const picStyle = {
-        "max-height": "200px",
-        "max-width":"90%"
+        "maxHeight": "200px",
+        "maxWidth":"90%"
     }
     const [formData, updateFormData] = useState(initData)
 
@@ -32,7 +32,7 @@ export default function JoinForm() {
     useEffect(() => {
         handleResize()
         window.addEventListener('resize', handleResize);
-    }, [])
+    },)
 
     const handleSubmit = async (event) => {
         event.preventDefault()

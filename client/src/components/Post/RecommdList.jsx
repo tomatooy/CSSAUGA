@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import RecommondCard from "./RecommondCard"
 import styles from "./Post.module.css"
 import axios from 'axios'
@@ -12,7 +12,7 @@ export default function RecommdList() {
   }
   useEffect(() => {
     fetch(postId)
-  }, [])
+  }, [postId])
 
 
 
@@ -34,8 +34,9 @@ export default function RecommdList() {
   )
 
   async function fetch(postId) {
+    const url = process.env.REACT_APP_SERVER_URL
     try {
-      const response = await axios.get(`http://localhost:5001/post/getRecommand?_id=${postId}`);
+      const response = await axios.get(`${url}post/getRecommand?_id=${postId}`);
       setRecData(response.data);
     } catch (error) {
       console.error('Error fetching embedded content:', error);

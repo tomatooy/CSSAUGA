@@ -29,8 +29,9 @@ export default function SwiperMain() {
   );
 
   async function fetch() {
+    const url = process.env.REACT_APP_SERVER_URL
     try {
-      const res = await axios.get("http://localhost:5001/post/getBanner")
+      const res = await axios.get(`${url}post/getBanner`)
       changeSlide(res.data)
      } catch (err) { 
       console.log(err.message)

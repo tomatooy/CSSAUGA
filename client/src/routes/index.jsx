@@ -4,8 +4,9 @@ import ContactPage from '../pages/ContactPage'
 import Resource from '../components/Resource'
 import Gallery from '../components/Gallery'
 import Post from '../pages/Post'
-import Event from '../components/Events/EventList'
 import JoinForm from '../pages/JoinForm'
+import AdminSignIn from '../pages/AdminSignIn'
+import AdminMain from '../pages/AdminMain'
 const router = [
     {
         path: '/detail',
@@ -35,6 +36,14 @@ const router = [
         path:'/joinus',
         element:<JoinForm/>
     },
+    {
+        path:'/admin/login',
+        element:<AdminSignIn/>
+    },
+    {
+        path:'/admin',
+        element:<AdminMain/>
+    }
 
 ]
 
