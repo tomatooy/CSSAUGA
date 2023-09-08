@@ -30,6 +30,7 @@ export default function Events() {
     try {
       const res =  await axios.get(`${url}post/get`)
       setEvent(res.data)
+      console.log(res.data)
     } catch (error) {
       console.log(error.message)
     }

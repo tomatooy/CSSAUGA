@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import './joinform.css'
-import { PhoneNumberInput } from '../api/api';
+import { PhoneNumberInput } from '../utils/utils';
 import axios from 'axios';
 import joinpic from '../image/join.jpg'
 
@@ -17,7 +17,7 @@ export default function JoinForm() {
         major: '',
         year: '',
         text: '',
-        date: ''
+        date: new Date()
     }
 
     const picStyle = {
@@ -35,9 +35,10 @@ export default function JoinForm() {
     },)
 
     const handleSubmit = async (event) => {
+        const url = process.env.REACT_APP_SERVER_URL
         event.preventDefault()
-        updateFormData({ ...formData, date: new Date() })
-        const res = await axios.post('http://localhost:5001/joinus', formData)
+        updateFormData({ ...formData, date: new Date()})
+        const res = await axios.post(`${url}joinus`, formData)
         const { status } = res
         if (status === 200) {
             alert("Submitted! We be in touch with you soon")

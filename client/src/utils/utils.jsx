@@ -9,6 +9,9 @@ export function PhoneNumberInput(input) {
 }
 
 export function formatGoogleDriveImageUrl (driveUrl) {
+    if (!driveUrl.startsWith('https://drive.google.com/file')) {
+        return driveUrl; // return
+    }
     // Extract the file ID from the Google Drive URL
     const fileIdMatch = driveUrl.match(/\/d\/(.+?)\/view/);
     if (!fileIdMatch || fileIdMatch.length < 2) {

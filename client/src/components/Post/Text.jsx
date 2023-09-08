@@ -36,14 +36,4 @@ export default function Content() {
       setLoading(false)
     }
   }
-
-  // async function test(){
-  //   const url = "https://api.weixin.qq.com/cgi-bin/material/get_material?access_token=72_-2fyPkteV9T4oAhpsWqQKGXld2ssIEGnhndTKoCyHuFUFPpu9Ip2ZETe2vXmRN0MIln73QKIW7nm6SvC5bqcivnpY8FE3oSqPiEMTRyMN6x0PR7HE5V9689ge2UOQUfACAZBF"
-  //   try {
-  //     const response = axios.post(url,{"media_id" : "NjWDKlnENr-CGHNAw_ZELd2BCNB6UeXNG89K9EcyWqRfs-8IGxObbLPQX_71kQ99"})
-  //     console.log(response)
-  //   } catch (error) {
-      
-  //   }
-  // }
 }

@@ -3,7 +3,7 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import React, { useEffect, useState } from "react";
 import axios from "axios"
-import { formatGoogleDriveImageUrl } from '../../api/api'
+import { formatGoogleDriveImageUrl } from '../../utils/utils'
 export default function GalleryPage() {
     //const breakpoints = [4320, 2160, 1080, 640, 384, 256, 128];
     const [index, setIndex] = useState(-1)

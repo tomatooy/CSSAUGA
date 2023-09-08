@@ -6,7 +6,11 @@ export default function Event(props) {
   const { eventData } = props
   const { coverUrl, createdAt, header, title, _id } = eventData
   const style = { "text-decoration": "none" };
-  const formattedDate = createdAt && createdAt.split('T')[0] ;
+  const formattedDate = new Date(createdAt).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
 
   return (
     <div className={styles.event}>

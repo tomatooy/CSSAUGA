@@ -4,6 +4,11 @@ import styles from './Post.module.css'
 export default function RecommondCard(props) {
  
   const {coverUrl,title,createdAt} = props.data
+  const formattedDate = new Date(createdAt).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
   return (
     <>
     <Card className={styles.card}>
@@ -13,7 +18,7 @@ export default function RecommondCard(props) {
           {title}
         </Card.Text>
         <Card.Text>
-          {createdAt}
+          {formattedDate}
         </Card.Text>
       </Card.Body>
     </Card>
