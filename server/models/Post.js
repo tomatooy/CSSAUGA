@@ -4,9 +4,11 @@ const PostSchema = mongoose.Schema({
   coverUrl: String,
   wechatUrl: String,
   title: String,
-  createdAt: String,
   header: String,
-  bannerShow: Boolean
+  bannerShow: Boolean,
+  contentShow: Boolean,
+},{
+  timestamps: true // This option enables the timestamps feature
 })
 
 const Post = mongoose.model("Post", PostSchema)
@@ -21,5 +23,6 @@ export default Post
  "createdAt" : "2023-01-24",
  "header":" 听说：先到场的观众会将有特别的小惊喜！期待与你们的见面！！",
  "bannerShow":false
+ "contentShow"true
 }
 */

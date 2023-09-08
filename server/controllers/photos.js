@@ -4,9 +4,9 @@ import Photo from "../models/Photo.js"
 export const addPhoto = async (req, res) => {
 
     try {
-        const { url,height,width} = req.body
+        const { src,height,width} = req.body
         const newPhoto = new Photo({
-            url,height,width
+            src,height,width
         })
         await newPhoto.save()
         res.status(200).json(newPhoto)
@@ -24,5 +24,18 @@ export const getPhoto= async (req, res) => {
     }
     catch (err) {
         res.status(404).json({ message: err.message });
+    }
+}
+
+export const deletePhoto = async(req, res) => {
+    try {
+        const {_id}= req.query
+        await Photo.findByIdAndRemove(_id)
+        res.status(204).json({
+            status: 'success',
+            data: null,
+        });
+    } catch (error) {
+        res.status(400).json({ message: error.message });
     }
 }

@@ -7,12 +7,12 @@ import helmet from "helmet";
 import authRoutes from "./routes/auth.js"
 import postRoutes from "./routes/posts.js"
 import photoRoutes from './routes/photos.js'
-import { saveForm } from "./controllers/joinus.js";
-
+import formRoutes from './routes/joinus.js'
+import userRoutes from './routes/users.js'
 
 dotenv.config()
 const app = express()
-app.use(express.json())
+app.use(express.json({limit: '50mb'}))
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.use(helmet())
@@ -20,10 +20,10 @@ app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }))
 app.use(cors())
 //routes
 app.use("/auth", authRoutes)
-app.post("/joinus", saveForm)
+app.use("/joinus", formRoutes)
 app.use('/post', postRoutes)
 app.use('/photo',photoRoutes)
-
+app.use('/users', userRoutes);
 
 //hi
 app.get('/', (req, res) => {
