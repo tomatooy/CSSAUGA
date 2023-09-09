@@ -3,9 +3,11 @@ import styles from './Detail.module.css'
 import { useLocation } from 'react-router-dom';
 import { Departments } from './DetailData'
 import ResponsiveNav from './Offcanvas';
+import { useTranslation } from 'react-i18next';
 
 
 export default function DetailDisplay() {
+    const {t} = useTranslation()
     function useQuery() {
         const { search } = useLocation();
         return React.useMemo(() => new URLSearchParams(search), [search]);
@@ -23,7 +25,7 @@ export default function DetailDisplay() {
                 </div>
                 {
                     query.description.map((paragraph)=>{
-                        return (<><p>{paragraph}</p><br/></>)
+                        return (<><p>{t(paragraph)}</p><br/></>)
                     })
                 }
                 <img src={query.img} alt="ima" />

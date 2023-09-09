@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react'
 import { Swiper, SwiperSlide} from "swiper/react";
 import styles from './Department.module.css'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -11,28 +12,25 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 
 
+
 const departments = [
-    ['Advertising','宣传部', 'Responsible for event promotion and manage social media on different platforms','负责活动推广及各平台社交媒体管理',],
-    ['Information Technologhy','信息技术', 'Provide technical assitance for events and other deparments and internal informations management','为活动及其他部门及内部信息管理提供技术支持'],
-    ['Plan and Administration', '策划管理部','Core department of CSSA, responsible for major events from planning to hosting','CSSA核心部门，负责重大活动的策划与主办'],
-    ['Public Relationships', '外联部','Primary job is to asscoiate with merchants and companies to set up partnership and sponsorship for events','主要工作是与商家和公司建立合作伙伴关系并赞助活动'],
-    ['Treasure(TR)', '财务部','Treasurers are responsible for approving all student organization financial transactions.','CSSA的经济枢纽，掌控着CSSA平时所有活动的经济来源。'],
-    
-  ]
+    ['AD','AD_b'],['IT','IT_b'],['PA','PA_b'],['PR','PR_b'],['TR','TR_b']
+]
 
 export default function Departments() {
+    const { t } = useTranslation();
     const slides = departments.map(department => {
         return(
           <SwiperSlide className={styles.departmentSlide}>
             <div className={styles.departmentEle}>
-            <h2 className={styles.departmentName}>{department[0]}<br/><span>{department[1]}</span></h2>
+            <h2 className={styles.departmentName}>{t(department[0])}</h2>
 
             <div className={styles.departmentDetails}>
-              <p>{department[2]} <br/>{department[3]}</p>
+             <p>{t(department[1])}</p>
 
             </div>
-            <Link to="/detail?department=IT" className={styles.detailButton}>
-              LEARN MORE
+            <Link to={`/detail?department=${department[0]}`} className={styles.detailButton}>
+              {t('learn_more')}
             </Link>
           </div>
           </SwiperSlide>)
@@ -56,7 +54,7 @@ export default function Departments() {
     return (
         <>
             <div className={styles.departmentBanner}>
-                <h1 className={styles.bannerH1}>OUR STRUCTURE</h1>
+                <h1 className={styles.bannerH1}>{t('our_structure')}</h1>
                 <Swiper
                     slidesPerView={isMobile?1:3}
                     spaceBetween={40}

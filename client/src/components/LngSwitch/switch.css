@@ -1,0 +1,47 @@
+/* Container for the toggle switch */
+.toggle-switch {
+    position: absolute;
+    display: block;
+    width: 100px; /* Adjust the width to accommodate labels */
+    height: 34px;
+    background-color: #ccc; /* Inactive background color */
+    right: 0;
+    margin-right: 20px;
+  }
+  .toggle-switch input{
+    display: none;
+  }
+  /* Styles for CN and EN labels */
+  .label-cn,
+  .label-en {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    text-align: center;
+    width: 50%; /* Half of the container's width */
+    line-height: 34px; /* Vertically center the text */
+    font-weight: bold;
+    color: white; /* Text color */
+  }
+  
+  /* Style CN label */
+  .label-cn {
+    left: 0;
+    overflow: hidden;
+     /* Active background color for CN */
+  }
+  
+  /* Style EN label */
+  .label-en {
+    right: 0;
+   /* Inactive background color for EN */
+  }
+
+  
+  
+  @media screen and (max-width: 600px) {
+    .toggle-switch{
+        top: 80px;
+    }
+}
