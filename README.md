@@ -25,7 +25,7 @@ We have also built a admin portal for this project to manage the content and pos
 
 
 ## Features
--Done:
+- Done:
 - **Home Page**: A welcoming landing page with a brief introduction to the association and upcoming events.
 - **About Us**: Detailed information about the association's structure and mission.
 - **Events**: Detailed information pages for each event, directly converted from posts on our wechat platform by transmitting the data.
@@ -34,7 +34,7 @@ We have also built a admin portal for this project to manage the content and pos
 - **Resources**: Links to relevant documents, resources, and external websites.
 - **Language Switching** A langague toggle (EN/CN) is provided for users to view the page in different languages.
 
--On Going:
+- On Going:
 - **Design Optimization**: Update visual effect for about us
 - **Events Sign Up**: Allow users to sign up for event, and send follow up emails.
 - **More Resource**: Provide more resource.
