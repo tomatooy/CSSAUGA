@@ -1,16 +1,19 @@
-# Project Name
+# UGACSSA Website
 
-![Project Logo/Thumbnail](link-to-your-project-image.png)
+![Project Logo/Thumbnail](https://cdn.discordapp.com/attachments/940402118953668642/1150268663618875402/image.png)
 
 ## Description
 
-Briefly describe your website project. What does it do? What problem does it solve? Why is it useful?
+Welcome to the official website of the CSSA Student Association at the University of Georgia. This website serves as a hub for our student organization, providing information about our mission, events, leadership, and how to get involved. It also facilitates the intercations among members who have joined the origanization by providing them the details and schedules for upcoming events.
 
 ## Live Demo
 
-Provide a link to a live demo of your website if available. This allows users and contributors to see the project in action.
+[Live Demo](https://ugacssa.vercel.app/)
 
-[Live Demo](https://example.com)
+## Admin Portal
+
+We have also built a admin portal for this project to manage the content and posts that are shown on the website.
+[GitHub Repo](https://github.com/tomatooy/CSSAadmin)
 
 ## Table of Contents
 
@@ -19,30 +22,24 @@ Provide a link to a live demo of your website if available. This allows users an
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 
 List the key features of your website project. For example:
 
-- Feature 1: Description
-- Feature 2: Description
-- ...
+- **Home Page**: A welcoming landing page with a brief introduction to the association and upcoming events.
+- **About Us**: Detailed information about the association's structure and mission.
+- **Events**: Detailed information pages for each event, directly converted from posts on our wechat platform by transmitting the data.
+- **Contact/Join Us**: Contact details and a join us form for inquiries.
+- **Gallery**: A photo gallery showcasing past events and activities.
+- **Resources**: Links to relevant documents, resources, and external websites.
 
 ## Technologies Used
 
-- List the technologies, libraries, and frameworks used in your project. For example:
-  - HTML5
-  - CSS3
-  - JavaScript
-  - React
-  - ...
+  - React, NodeJS, MongoDB, Bootstrap, Express, i18next, Heroku, Vercel, Pupeteer etc.
 
-## Installation
+## Contributing
 
-Provide instructions on how to set up and run your project locally. For example:
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/your-project.git
+- Own By UGACSSA
+- Design and built by tomatooy
