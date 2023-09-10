@@ -19,8 +19,6 @@ We have also built a admin portal for this project to manage the content and pos
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
 - [Contributing](#contributing)
 
 
