@@ -2,6 +2,8 @@
 
 ![Project Logo/Thumbnail](https://cdn.discordapp.com/attachments/940402118953668642/1150268663618875402/image.png)
 
+![Thumbnai2](https://cdn.discordapp.com/attachments/940402118953668642/1150287147245522974/image.png)
+
 ## Description
 
 Welcome to the official website of the CSSA Student Association at the University of Georgia. This website serves as a hub for our student organization, providing information about our mission, events, leadership, and how to get involved. It also facilitates the intercations among members who have joined the origanization by providing them the details and schedules for upcoming events.
