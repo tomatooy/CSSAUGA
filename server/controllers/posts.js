@@ -162,7 +162,7 @@ export const postPreview = async (req, res) => {
                     } else {
                         newImg.setAttribute('style', 'height: auto');
                     }
-
+                    
                     img.parentNode.replaceChild(newImg, img);
                 } else {
                     img.remove();
