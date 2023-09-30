@@ -8,8 +8,8 @@
     "MyUGAPortal":"MyUGAPortal",
     "Resource":"Resource",
     "WHAT_IS_CSSA":"What is UGACSSA?",
-    "WHAT_IS_CSSA_des":"CSSA mainly consists of Chinese students and scholars from different areas in China. We tried to make all Chinese students united and establish more friendships. The stated function of CSSAs is helping away-from-home Chinese in their life, study, work, and other issues, to bring Chinese students together on campus, serving as a bridge between the Chinese and other communities, and spreading Chinese culture. The groups typically host events such as annual Chinese New Year galas, holiday celebrations as well as academic forums and talent recruitment competitions tied to the Thousand Talents Plan.",
-    "reasonToJoin":"Reason to Join CSSA",
+    "WHAT_IS_CSSA_des":"CSSA consists of Chinese Students and Scholars Association. We tried to make all Chinese students united and establish more friendships. The stated function of CSSAs is helping away-from-home Chinese in their life, study, work, and other issues, to bring Chinese students together on campus, serving as a bridge between the Chinese and other communities, and spreading Chinese culture. The groups typically host events such as annual Chinese New Year galas, holiday celebrations as well as academic forums and talent recruitment competitions tied to the Thousand Talents Plan.",
+    "reasonToJoin":"Join US!",
     "its_fun":"Its fun!",
     "improve_resume":"Improve Resume",
     "build_community":"Build the Community",
@@ -44,7 +44,8 @@
     "connect":"Connect with us",
     "learn_more":"learn more",
     "more_post":"MORE POST",
-    "":"",
-    "":"",
-    "":""
+    "our_mission":"OUR MISSION",
+    "our_event":"OUR EVENT",
+    "our_mission_d":"Our mission to spreading Chinese culture and building a bridge between Chinese student community and the entire UGA community. Serving all Chinese students and scholars at the University of Georgia and even all Chinese, from enriching extracurricular activities to assisting the mechanics industry and employment, multi-dimensional all-round escort for students' campus life.",
+    "our_event_d":"We organize large-scale events for every big festival, especially the traditional Chinese festivals, including the Mid-Autumn Festival, Chinese New Year and so on. We offer  a variety of ways to maximize the experience of Chinese culture for those who attend, including gala parties, games, and of course, Chinese food! If these sound interesting to you, make sure to follow us on social medias to get information about the events!"
   }

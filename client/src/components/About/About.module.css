@@ -23,15 +23,23 @@
 
 
 .upperTextWrapper{
-    width: 70%;
+    width: 60%;
     margin: auto;
     font-size: large;
+    padding: 10px;
 }
 .main {
     height: auto;
     min-height: 60vh;
     display: flex;
     width: 100%;
+    overflow: hidden;
+
+}
+.mainBackground {
+    padding: 15vh 10px;
+    background-image:linear-gradient(-45deg,rgba(0,0,0,.15) 50%,transparent 0);
+    background-color: rgba(85,79,71,1)!important;
 }
 
 .bannerPic img {
@@ -56,14 +64,26 @@
 }
 
 .bannerPic {
+    position: relative;
     width: 50%;
+    opacity: 0;
+    transition: 1.0s all ease;
+    padding: 20px;
 }
+
+.active{
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+}
+
 .bannerText{
-    background-image:linear-gradient(-45deg,rgba(0,0,0,.15) 50%,transparent 0);
-    background-color: rgba(85,79,71,1)!important;
     width: 50%;
-    display: flex;
     align-items: center;
+    padding: 20px;
+}
+.bannerText p{
+    line-height:30px;
+    margin-top:1rem;
 }
 
 .joinUs {
@@ -76,7 +96,7 @@
     box-sizing: border-box;
     transition: all 300ms ease-in;
     display: inline-block;
-    margin: 3em;
+
 }
 
 
@@ -90,6 +110,9 @@
 .lowerTextWrapper ul{
     text-align: none;
     font-size: larger;
+}
+.lowerTextWrapper p{
+    font-size:20px;
 }
 
 .lowerTextWrapper{
@@ -109,9 +132,11 @@
     }
     .bannerPic,.bannerText{
         width: 100%;
+        
     }
     .bannerPic{
         height: 60vh;
+        display: none;
     }
     .bannerText p{
         font-size:medium;
