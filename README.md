@@ -1,8 +1,5 @@
 # UGACSSA Website
 
-![Project Logo/Thumbnail](https://cdn.discordapp.com/attachments/940402118953668642/1150268663618875402/image.png)
-
-![Thumbnai2](https://cdn.discordapp.com/attachments/940402118953668642/1150287147245522974/image.png)
 
 ## Description
 
@@ -39,7 +36,7 @@ We have also built a admin portal for this project to manage the content and pos
 - **Events Sign Up**: Allow users to sign up for event, and send follow up emails.
 - **More Resource**: Provide more resource.
 
-## Technologies Used
+## Stack
 
   - React, NodeJS, MongoDB, Bootstrap, Express, i18next, Heroku, Vercel, Pupeteer etc.
 
